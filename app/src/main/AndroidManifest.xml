@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".MedAxisApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_medaxis_logo"
+        android:label="MedAxis"
+        android:roundIcon="@drawable/ic_medaxis_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedAxis">
+
+        <activity
+            android:name=".ui.common.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MedAxis.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.auth.AuthActivity" android:exported="false" />
+        <activity android:name=".ui.patient.PatientDashboardActivity" android:exported="false" />
+        <activity android:name=".ui.doctor.DoctorDashboardActivity" android:exported="false" />
+        <activity android:name=".ui.appointment.BookAppointmentActivity" android:exported="false" />
+        <activity android:name=".ui.patient.NearbyHospitalsActivity" android:exported="false" />
+        <activity android:name=".ui.notification.NotificationActivity" android:exported="false" />
+        <activity android:name=".ui.profile.ProfileActivity" android:exported="false" />
+
+        <service
+            android:name=".services.MedAxisFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

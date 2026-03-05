@@ -1,0 +1,9 @@
+<resources>
+    <color name="md_primary">#2563EB</color>
+    <color name="md_secondary">#14B8A6</color>
+    <color name="md_surface">#F8FAFC</color>
+    <color name="md_accent">#FFFFFF</color>
+    <color name="md_text_primary">#0F172A</color>
+    <color name="md_text_secondary">#475569</color>
+    <color name="md_error">#DC2626</color>
+</resources>

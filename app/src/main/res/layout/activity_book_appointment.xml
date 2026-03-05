@@ -1,0 +1,33 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <EditText android:id="@+id/etPatientName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Patient Name"/>
+        <EditText android:id="@+id/etDisease" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Disease"/>
+        <Spinner android:id="@+id/spinnerDoctor" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/etDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Date (DD/MM/YYYY)"/>
+        <Spinner android:id="@+id/spinnerTime" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Confirm Appointment"/>
+
+    </LinearLayout>
+</ScrollView>
